@@ -9,6 +9,8 @@ function myMap() {
   };
   var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
+  console.log("mapProp+++++++++++++++++++++", map);
+
   const sampleData = meter.result.records.map(record => record.lonlatconc.split(', ').map(string => JSON.parse(string)))
 
   const smallSetOfMeters = meters.slice(0)

@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-const meters = fs.readFileSync('parkingmeters2015.csv', 'utf8')
+const meters = fs.readFileSync('parkingMeters.csv', 'utf8')
 
 const meterArray = meters.split('\r\n').map(meter => {
   singleArray = meter.split(',')
